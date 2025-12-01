@@ -41,7 +41,7 @@ int search(hash_t *hash,char *str)
                 mtemp = mtemp->m_link; // move to next main node
             }
 
-           // return SUCCESS;
+            return SUCCESS;
         }
     // }
 
