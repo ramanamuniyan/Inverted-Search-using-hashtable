@@ -188,6 +188,25 @@ Enter choice:
 
 ---
 
+## 🐳 Docker Support
+
+You can run the Inverted Search application using Docker.
+
+### Build the Docker Image
+```bash
+docker build -t inverted-search .
+```
+
+### Run the Application
+Since this is an interactive console application that requires reading files, you should run it in interactive mode and mount your data directory.
+
+```bash
+docker run --rm -it -v "$(pwd):/usr/src/app" inverted-search
+```
+*Note: Ensure your text files are in the current directory so they are available inside the container.*
+
+---
+
 ## 📈 Future Enhancements
 - [ ] Add file change detection to auto-update index   
 - [ ] Implement partial-word and phrase search  
